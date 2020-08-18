@@ -23,9 +23,7 @@ function render() {
   }).$mount("#app");
 }
 
-if (!window.__POWERED_BY_QIANKUN__) {
-  render();
-}
+window.__POWERED_BY_QIANKUN__ || render();
 
 export async function bootstrap() {
   console.log("vue app bootstraped");

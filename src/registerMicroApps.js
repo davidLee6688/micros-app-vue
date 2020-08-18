@@ -72,25 +72,25 @@ export const registerApps = ({ store, render }) => {
     [
       {
         name: "vue-app-one",
-        entry: "//localhost:8081",
+        entry: "http://localhost:8081",
         activeRule: genActiveRule("/vue-app-one"),
         render,
         props
       },
       {
         name: "vue-app-two",
-        entry: "//localhost:8082",
+        entry: "http://localhost:8082",
         activeRule: genActiveRule("/vue-app-two"),
         render,
         props
+      },
+      {
+        name: "html-app-one",
+        entry: "http://localhost:8083",
+        activeRule: genActiveRule("/html-app-one"),
+        render,
+        props
       }
-      // {
-      //   name: "html-app-one",
-      //   entry: "//localhost:5000",
-      //   activeRule: genActiveRule("/html-app-one"),
-      //   render,
-      //   props
-      // }
     ],
     lifeCycle
   );
